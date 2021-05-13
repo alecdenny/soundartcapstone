@@ -34,6 +34,11 @@ function preload(){
 
    synth = new p5.PolySynth();
    synth.setADSR(0.001, 0.1, 0, 0.1);
+   
+   strokeWeight(0);
+   
+   textSize(32);
+   text('word', 10, 30);
 
 }
 
@@ -52,6 +57,8 @@ function canvasPressed() {
 }
 
 function onSoundLoop(timeFromNow) {
+  slider.position((windowWidth/2)-50, (windowHeight/2)+40);
+  slider2.position((windowWidth/2)-50, (windowHeight/2)+80);
   let noteIndex = (soundLoop.iterations - 1) % notePattern.length;
   let note = midiToFreq(notePattern[noteIndex]);
   synth.play(note, 0.5, timeFromNow, 0.1);
