@@ -7,7 +7,7 @@ let slider, slider2;
 let img;
 
 function preload(){
-  image = loadImage('calmingmusic2.png');
+  img = loadImage('/calmingmusic2.png');
 }
 
  function setup() {
