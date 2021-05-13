@@ -17,11 +17,11 @@ function preload(){
    background(255, 255, 255);
    image(img, (windowWidth/2)-128, windowHeight/4, 255, 255);
    text('tap to start/stop', 10, 20);
-   slider = createSlider(8, 12, 100);
+   slider = createSlider(6, 20, 100);
    slider.position((windowWidth/2)-50, (windowHeight/2)+80);
    slider.style('width', '80px');
 
-   slider2 = createSlider(3, 10, 100);
+   slider2 = createSlider(3, 15, 100);
    slider2.position((windowWidth/2)-50, (windowHeight/2)+110);
    slider2.style('width', '80px');
 
@@ -33,7 +33,7 @@ function preload(){
    soundLoop2 = new p5.SoundLoop(onSoundLoop2, intervalInSeconds);
 
    synth = new p5.PolySynth();
-   synth.setADSR(0.001, 0.1, 0, 0.1);
+   synth.setADSR(0.01, 0.1, 0, 0.5);
    
    textSize(12);
    textAlign(CENTER);
