@@ -15,7 +15,7 @@ function preload(){
    cnv.mousePressed(canvasPressed);
    colorMode(RGB);
    background(255, 255, 255);
-   image(img, (windowWidth/2)-(windowHeight/6), windowHeight/4, windowHeight/3, windowHeight/3);
+   image(img, (windowWidth/2)-(windowHeight/4), windowHeight/4, windowHeight/2, windowHeight/2);
    text('tap to start/stop', 10, 20);
    slider = createSlider(8, 12, 100);
    slider.position((windowWidth/2)-50, (windowHeight/2)+80);
