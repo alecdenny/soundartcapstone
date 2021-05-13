@@ -18,11 +18,11 @@ function preload(){
    image(img, (windowWidth/2)-128, 128, 255, 255);
    text('tap to start/stop', 10, 20);
    slider = createSlider(8, 12, 100);
-   slider.position((windowWidth/2)-50, (windowHeight/2)+40);
+   slider.position((windowWidth/2)-50, (windowHeight/2)+60);
    slider.style('width', '80px');
 
    slider2 = createSlider(3, 10, 100);
-   slider2.position((windowWidth/2)-50, (windowHeight/2)+80);
+   slider2.position((windowWidth/2)-50, (windowHeight/2)+100);
    slider2.style('width', '80px');
 
    //the looper's callback is passed the timeFromNow
@@ -37,7 +37,7 @@ function preload(){
    
    textSize(12);
    textAlign(CENTER);
-   text('move sliders to change the speeds of each phrase\nDuration: unknown\nAlec Denny', (windowWidth/2)-50, (windowHeight/2)+160);
+   text('move sliders to change the speeds of each phrase\nDuration: unknown\nAlec Denny', (windowWidth/2), (windowHeight/2)+200);
    strokeWeight(0);
    
    
