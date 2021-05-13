@@ -37,7 +37,7 @@ function preload(){
    
    textSize(12);
    textAlign(CENTER);
-   text('move sliders to change the speeds of each phrase\nDuration: unknown', (windowWidth/2)-50, (windowHeight/2)+160);
+   text('move sliders to change the speeds of each phrase\nDuration: unknown\nAlec Denny', (windowWidth/2)-50, (windowHeight/2)+160);
    strokeWeight(0);
    
    
