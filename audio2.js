@@ -35,8 +35,9 @@ function preload(){
    synth = new p5.PolySynth();
    synth.setADSR(0.001, 0.1, 0, 0.1);
    
-   textSize(72);
-   text('word', (windowWidth/2)-50, (windowHeight/2)+160);
+   textSize(12);
+   textAlign(CENTER);
+   text('move sliders to change the speeds of each phrase\nDuration: unknown', (windowWidth/2)-50, (windowHeight/2)+160);
    strokeWeight(0);
    
    
