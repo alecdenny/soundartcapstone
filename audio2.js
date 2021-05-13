@@ -18,11 +18,11 @@ function preload(){
    image(img, (windowWidth/2)-512, 0);
    text('tap to start/stop', 10, 20);
    slider = createSlider(8, 12, 100);
-   slider.position(windowWidth/2, (windowHeight/2)+40);
+   slider.position((windowWidth/2)-50, (windowHeight/2)+40);
    slider.style('width', '80px');
 
    slider2 = createSlider(3, 10, 100);
-   slider2.position(windowWidth/2, (windowHeight/2)+80);
+   slider2.position((windowWidth/2)-50, (windowHeight/2)+80);
    slider2.style('width', '80px');
 
    //the looper's callback is passed the timeFromNow
