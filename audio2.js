@@ -4,18 +4,18 @@ let synth, soundLoop, soundLoop2;
 let notePattern = [60, 62, 64, 67, 69, 72];
 let notePattern2 = [72, 74, 59, 55, 53];
 let slider, slider2;
-//let img;
-/*
+let img;
+
 function preload(){
   image = loadImage('calmingmusic2.png');
 }
-*/
+
  function setup() {
    let cnv = createCanvas(windowWidth,windowHeight);
    cnv.mousePressed(canvasPressed);
    colorMode(RGB);
    background(255, 255, 255);
-   //image(img, 0, 0);
+   image(img, 0, 0);
    text('tap to start/stop', 10, 20);
    slider = createSlider(8, 12, 100);
    slider.position(windowWidth/2, (windowHeight/2)+40);
